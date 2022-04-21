@@ -59,7 +59,7 @@ download the source code and open a command prompt in the project’s directory:
 
 Next, chose your preferred method for invoking the algorithm:
 
-### Retrieve **$ClXY** info using the CLI
+### Retrieve **$CLXY** info using the CLI
 
 To retrieve the current *mainnet* circulating supply of the `$CLXY`, enter the following in the command line:
 
@@ -71,7 +71,7 @@ or
 npm run clxy
 ```
 
-Something similar to the following sould be displayed in the console:
+Something similar to the following should be displayed in the console:
 
 ```
 {
