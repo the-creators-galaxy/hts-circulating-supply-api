@@ -1,0 +1,25 @@
+{
+  "name": "@creators-galaxy/hts-circulating-supply-api",
+  "version": "1.0.0",
+  "description": "The easiest way to calculate circulating supply for Hedera Token Service assets.",
+  "main": "server.js",
+  "scripts": {
+    "cli": "node cli",
+    "clxy": "node clxy",
+    "start:local": "node -r dotenv/config server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-creators-galaxy/hts-circulating-supply-api.git"
+  },
+  "keywords": [],
+  "author": "Calaxy, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-creators-galaxy/hts-circulating-supply-api/issues"
+  },
+  "homepage": "https://github.com/the-creators-galaxy/hts-circulating-supply-api#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

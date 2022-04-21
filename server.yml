@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  hts-circulating-supply-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: tcg/hts-circulating-supply-api:local
+    ports:
+      - ${PORT}:3000
+    environment:
+      - TOKEN_ID=${TOKEN_ID}
+      - TREASURIES=${TREASURIES}
+      - MIRROR_NODE=${MIRROR_NODE}
+      - PORT=3000
