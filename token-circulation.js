@@ -106,7 +106,7 @@ module.exports = async function tokenCirculation(source, token, treasuries) {
     async function getTreasuryBalances() {
         const result = [];
         for (var treasury of treasuries) {
-            const info = await getHcsAccountBalance(treasury);
+            const info = await getHTSAccountBalance(treasury);
             if (info && info.balances) {
                 const balances = info.balances[0];
                 if (balances && balances.tokens) {
@@ -131,7 +131,7 @@ module.exports = async function tokenCirculation(source, token, treasuries) {
      * @throws {Error} Error if there was a problem communicating with the mirror node
      * endpoint or if the account with the specified ID was not found.
      */
-    async function getHcsAccountBalance(account) {
+    async function getHTSAccountBalance(account) {
         const queryParams = new URLSearchParams({ 'account.id': account, 'timestamp': timestamp });
         const path = `/api/v1/balances?${queryParams.toString()}`;
         const options = { hostname: source, path, method: 'GET', agent };
